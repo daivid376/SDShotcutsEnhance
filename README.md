@@ -2,6 +2,8 @@ author:daiwei
 w.dai@outlook.com
 https://www.artstation.com/artwork/3oP8Bg
 
+
+# show how it works
 ![01](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-01.gif)
 Create new node at your mouse position ,using shortcuts
 
@@ -40,33 +42,28 @@ The nodes' new position will affected by the relative position of connected prop
 shortcut Q
 
 
-使用方法：
-找到你的SD插件目录，一般在你的 [安装路径]\Substance Designer 2019\resources\python\sdplugins 这个位置
-把整个文件夹SDShortcutsEnhance 解压到该路径下即可。
 
-或者使用自定义的插件路径效果也是一样
 
-## Preview
-#Setup:
+## Setup:
 find your SD plugin folder,normally located at [application installed path]\Substance Designer 2019\resources\python\sdplugins
 copy SDShortcutsEnhance folder to the plugin folder. done!
 (use your custom plugin path is the same)
 
-Notification:
+## Notification:
  I can't get an  azerty  keyboad ,all shortcuts are tested and worked only on a qwerty keyboard.
 This is a qwerty keyboard plugin only
 
 
-Shortcuts:
+# Shortcuts:
 
-specialFunctions
+## specialFunctions
 
 C	reconnect selected nodes
 Q	rerange selected nodes
 shift+X	disconnect selected nodes
 
 
-compGraph
+## compGraph
 
 t	transform
 b	blend over
@@ -93,7 +90,7 @@ ctrl+i	invert
 p	pixel processor 16bit grayscale
 shift+f	add frame
 
-funcGraph
+## funcGraph
 1	float1
 2	float2
 3	float3
@@ -118,14 +115,8 @@ p	power
 i	if else
 l	lerp
 r	random
--	negation
+'-'	negation
 g	sample grey
 shift+c	sample color
 
-
-pre code,  /* stackoverflow */
-.md:not(.use-csslab) pre code
- {
-  white-space: pre-wrap;
-}
 
