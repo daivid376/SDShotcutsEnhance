@@ -1,11 +1,11 @@
 author:daiwei 
 w.dai@outlook.com
 
-Ê¹ÓÃ·½·¨£º
-ÕÒµ½ÄãµÄSD²å¼şÄ¿Â¼£¬Ò»°ãÔÚÄãµÄ [°²×°Â·¾¶]\Substance Designer 2019\resources\python\sdplugins Õâ¸öÎ»ÖÃ
-°ÑÕû¸öÎÄ¼ş¼ĞSDShortcutsEnhance ½âÑ¹µ½¸ÃÂ·¾¶ÏÂ¼´¿É¡£
+ä½¿ç”¨æ–¹æ³•ï¼š
+æ‰¾åˆ°ä½ çš„SDæ’ä»¶ç›®å½•ï¼Œä¸€èˆ¬åœ¨ä½ çš„ [å®‰è£…è·¯å¾„]\Substance Designer 2019\resources\python\sdplugins è¿™ä¸ªä½ç½®
+æŠŠæ•´ä¸ªæ–‡ä»¶å¤¹SDShortcutsEnhance è§£å‹åˆ°è¯¥è·¯å¾„ä¸‹å³å¯ã€‚
 
-»òÕßÊ¹ÓÃ×Ô¶¨ÒåµÄ²å¼şÂ·¾¶Ğ§¹ûÒ²ÊÇÒ»Ñù
+æˆ–è€…ä½¿ç”¨è‡ªå®šä¹‰çš„æ’ä»¶è·¯å¾„æ•ˆæœä¹Ÿæ˜¯ä¸€æ ·
 
 Setup:
 find your SD plugin folder,normally located at [application installed path]\Substance Designer 2019\resources\python\sdplugins
