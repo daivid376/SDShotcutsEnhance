@@ -1,12 +1,52 @@
 author:daiwei 
 w.dai@outlook.com
+https://www.artstation.com/artwork/3oP8Bg
+
+![01](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-01.gif)
+Create new node at your mouse position ,using shortcuts
+
+![02](https://cdnb.artstation.com/p/assets/images/images/019/767/651/original/david-leoric-02.gif)
+The new node will be connected to the selected nodes automatically,when creating. At the same time, adjust postion to fit the selected nodes.
+
+
+
+![01](https://cdna.artstation.com/p/assets/images/images/019/767/658/original/david-leoric-03.gif)
+Disconnect a node from the other nodes, and try the best to reconnect previous input nodes to output nodes.
+shortcut Shift + X
+
+![01](https://cdnb.artstation.com/p/assets/images/images/019/767/757/original/david-leoric-04.gif)
+Reconnect existing nodes.Could affect multi properties. and change connect order by the position of nodes.
+shortcut C
+
+
+![01](https://cdna.artstation.com/p/assets/images/images/019/767/480/original/david-leoric-05.gif)
+Insert a node into some existing connections, when the node is acrossed by the connection.
+Support multi connections .
+shortcut C
+
+
+![01](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-06.gif)
+Rearrange selected nodes. Push them apart, when the nodes are two close.
+shortcut Q
+
+
+![01](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-07.gif)
+Align nodes by vertical or horizontal, when the nodes are very limited offset by each other.
+shortcut Q
+
+
+![01](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-08.gif)
+Rearrange input nodes mainly , when the input nodes have connected to some other nodes.
+The nodes' new position will affected by the relative position of connected property.
+shortcut Q
+
 
 使用方法：
 找到你的SD插件目录，一般在你的 [安装路径]\Substance Designer 2019\resources\python\sdplugins 这个位置
 把整个文件夹SDShortcutsEnhance 解压到该路径下即可。
 
 或者使用自定义的插件路径效果也是一样
-![hippo](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-01.gif)
+
 Setup:
 find your SD plugin folder,normally located at [application installed path]\Substance Designer 2019\resources\python\sdplugins
 copy SDShortcutsEnhance folder to the plugin folder. done!
