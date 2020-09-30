@@ -9,7 +9,6 @@ Create new node at your mouse position ,using shortcuts
 The new node will be connected to the selected nodes automatically,when creating. At the same time, adjust postion to fit the selected nodes.
 
 
-
 ![03](https://cdna.artstation.com/p/assets/images/images/019/767/658/original/david-leoric-03.gif)
 Disconnect a node from the other nodes, and try the best to reconnect previous input nodes to output nodes.
 shortcut Shift + X
