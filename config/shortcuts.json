@@ -1,0 +1,250 @@
+[
+{"key":"t",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::transformation",
+    "inputs":["input1"]}
+},
+
+{"key":"b",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::blend",
+    "inputs":["destination","source"]}
+},
+
+{"key":"a",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::blend",
+    "inputs":["destination","source"],
+    "props":[{"id":"blendingmode","value":1,"type":"int"}]},
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::add"}
+},
+{"key":"shift+a",
+    "SDSBSCompGraph":{
+    "node":"auto_levels.sbs",
+    "graphUrl":"auto_levels"}
+},
+
+{"key":"shift+s",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::blend",
+    "inputs":["destination","source"],
+    "props":[{"id":"blendingmode","value":2,"type":"int"}]},
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::sub"}
+},
+{"key":"alt+s",
+    "SDSBSCompGraph":{
+    "node":"slope_blur.sbs",
+    "graphUrl":"slope_blur_grayscale_2"}
+},
+{"key":"w",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::warp"}
+},
+{"key":"Shift+w",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::directionalwarp"}
+},
+{"key":"ctrl+shift+w",
+    "SDSBSCompGraph":{
+    "node":"non_uniform_directional_warp.sbs",
+    "graphUrl" : "non_uniform_directional_warp_grayscale"}
+},
+{"key":"ctrl+w",
+    "SDSBSCompGraph":{
+    "node":"multi_directional_warp.sbs",
+    "graphUrl" : "multi_directional_warp_grayscale"}
+},
+{"key":"l",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::levels"},
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::lerp"}
+},
+{"key":"u",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::uniform"},
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::get_float2",
+    "props":[{"id":"__constant__","value":"$pos","type":"string"}]
+    }
+},
+{"key":"shift+c",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::curve"},
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::samplecol"}
+},
+{"key":"g",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::gradient"},
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::samplelum"}
+},
+{"key":"ctrl+h",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::hsl"}
+},
+{"key":"shift+h",
+    "SDSBSCompGraph":{
+    "node":"histogram_scan.sbs"}
+},
+{"key":"ctrl+i",
+    "SDSBSCompGraph":{
+    "node":"invert.sbs",
+    "graphUrl" : "invert_grayscale"}
+},
+{"key":"ctrl+b",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::blur"}
+},
+{"key":"shift+b",
+    "SDSBSCompGraph":{
+    "node":"blur_hq.sbs",
+    "graphUrl" : "blur_hq_grayscale"}
+},
+{"key":"ctrl+shift+b",
+    "SDSBSCompGraph":{
+    "node":"non_uniform_blur.sbs",
+    "graphUrl" : "non_uniform_blur_grayscale"}
+},
+{"key":"p",
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::pixelprocessor",
+    "props":[{"id":"colorswitch","value":0,"type":"bool"},{"id":"$format","value":2,"type":"int"}],
+    "propertyInheritanceMethods":[{"id":"$format","value":"Absolute"}]
+    },
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"functions.sbs",
+    "graphUrl" : "Functions/Math/Pow"}  
+},
+
+
+{"key":"1",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::const_float1"}
+},
+{"key":"2",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::const_float2"}
+},
+{"key":"3",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::const_float3"}
+},
+{"key":"4",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::const_float4"}
+},
+{"key":"shift+1",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::get_float1"}
+},
+{"key":"shift+2",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::get_float2"}
+},
+{"key":"shift+3",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::get_float3"}
+},
+{"key":"shift+4",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::get_float4"}
+},
+{"key":"ctrl+2",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::vector2"}
+},
+{"key":"ctrl+3",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::vector3"}
+},
+{"key":"ctrl+4",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::vector4"}
+},
+{"key":"alt+1",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::swizzle1"}
+},
+{"key":"alt+2",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::swizzle2"}
+},
+{"key":"alt+3",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::swizzle3"}
+},
+{"key":"alt+4",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::swizzle4"}
+},
+{"key":"m",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::mul"},
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::blend",
+    "inputs":["destination","source"],
+    "props":[{"id":"blendingmode","value":3,"type":"int"}]}
+},
+{"key":"shift+m",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::mulscalar"}
+},
+{"key":"i",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::ifelse"}
+},
+{"key":"shift+d",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::div"},
+    "SDSBSCompGraph":{
+    "node":"sbs::compositing::blend",
+    "inputs":["destination","source"],
+    "props":[{"id":"blendingmode","value":8,"type":"int"}]}
+},
+{"key":"ifelse",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::div"}
+},
+{"key":"r",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::rand"}
+},
+{"key":"-",
+    "SDSBSFunctionGraph":{
+    "graphType":"SDSBSFunctionGraph",
+    "node":"sbs::function::neg"}
+}
+
+]

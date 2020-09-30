@@ -1,0 +1,37 @@
+v1.01:
+
+- fix blur node and blur hq node shortcuts
+
+- now blur hq shortcut (shift + b)  create the blur hq grayscale node
+
+- add shortcut "u" in funcGraph, to create a get float2 node with input = "$pos".This will work as a uv node
+
+- optimized the rearrange function's algorithm
+
+v1.02:
+
+-change shift+s from creating 'slop blur' node to 'slop blur grayscale'
+
+v1.10:
+
+-add ctrl + i  create invert grayscale node
+
+-add shift +d   create blend node in divide mode
+
+-add shift + s create blend node in substract mode
+
+-add shift + a  create auto level node
+
+-add ctrl + w  create multi directional warp node
+
+-add ctrl + shift + w create non uniform directional warp node
+
+-add ctrl + shift + b create non uniform blur node
+
+-change alt +s  create slop blur node
+
+-limit reconnct node function only affect closet nodes(need more test)
+
+-when pixel processor node is created by this plugin, 
+it will be set as grayscale and HDR Low Precision(16F) Absolute mode as default
+
