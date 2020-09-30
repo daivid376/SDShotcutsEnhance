@@ -122,5 +122,9 @@ g	sample grey
 shift+c	sample color
 
 
-
+pre code,  /* stackoverflow */
+.md:not(.use-csslab) pre code
+ {
+  white-space: pre-wrap;
+}
 
