@@ -6,7 +6,7 @@ w.dai@outlook.com
 把整个文件夹SDShortcutsEnhance 解压到该路径下即可。
 
 或者使用自定义的插件路径效果也是一样
-![hippo](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-01.gif?1564943917)
+![hippo](https://cdnb.artstation.com/p/assets/images/images/019/767/601/original/david-leoric-01.gif)
 Setup:
 find your SD plugin folder,normally located at [application installed path]\Substance Designer 2019\resources\python\sdplugins
 copy SDShortcutsEnhance folder to the plugin folder. done!
