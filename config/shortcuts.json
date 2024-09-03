@@ -222,15 +222,7 @@
     "graphType":"SDSBSFunctionGraph",
     "node":"sbs::function::ifelse"}
 },
-{"key":"shift+d",
-    "SDSBSFunctionGraph":{
-    "graphType":"SDSBSFunctionGraph",
-    "node":"sbs::function::div"},
-    "SDSBSCompGraph":{
-    "node":"sbs::compositing::blend",
-    "inputs":["destination","source"],
-    "props":[{"id":"blendingmode","value":8,"type":"int"}]}
-},
+
 {"key":"ifelse",
     "SDSBSFunctionGraph":{
     "graphType":"SDSBSFunctionGraph",

@@ -1,7 +1,20 @@
 #__author__ = daiwei
-#version v1.00
+#version v1.12
 import sd,os,json,math
-from PySide2 import QtGui,QtWidgets,QtCore
+import importlib
+def import_pyside():
+    try:
+        return importlib.import_module("PySide2")
+    except ImportError:
+        try:
+            return importlib.import_module("PySide6")
+        except ImportError as e:
+            raise ImportError('Neither PySide2 nor PySide6 could be found') from e
+pyside = import_pyside()
+QtGui = pyside.QtGui
+QtWidgets = pyside.QtWidgets
+QRect = pyside.QtCore.QRect
+QPoint = pyside.QtCore.QPoint
 
 
 from sd.api.sdbasetypes import float2
@@ -24,6 +37,7 @@ from sd.api.sdapplication import SDApplicationPath
 from sd.api.sdgraphobjectframe import SDGraphObjectFrame
 
 from sd.api.sdbasetypes import int2, int3, int4, float2, float3, float4, bool2, bool3, bool4, ColorRGBA
+
 
 
 def getUIMgr():
@@ -824,11 +838,21 @@ class NodeCreator(ShortcutsFunctions):
                         value = SDValueString.sNew(prop["value"])
                     newNode.setInputPropertyValueFromId(prop["id"], value)
             
-            
-
-
+    def _getCursorPos_multiScreen(self):
+        cursorPos = QtGui.QCursor.pos()
+        screens = QtWidgets.QApplication.screens()
+        windowSize = self.mainWindow.size()
+        windowPos = self.mainWindow.mapToGlobal(QPoint(0, 0))
+        windowRect = QRect(windowPos,windowSize)
+        for screen in screens:
+            screenGeometry = screen.geometry()
+            if screenGeometry.contains(cursorPos):
+                relativePos = cursorPos - windowPos
+                return relativePos
+                break
+        
     def _setNewNodeToMousePos(self):
-        pos = QtGui.QCursor.pos()
+        pos = self._getCursorPos_multiScreen()
         qtGraphWidget = self.mainWindow.childAt(pos)
 
         if qtGraphWidget:

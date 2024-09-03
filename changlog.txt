@@ -35,3 +35,9 @@ v1.10:
 -when pixel processor node is created by this plugin, 
 it will be set as grayscale and HDR Low Precision(16F) Absolute mode as default
 
+v1.11:
+-cancel shift+d conflict with official hotkey
+
+v1.12:
+-support substance 3d designer 14 (support pyside6)
+-multiple screens can also work normally
